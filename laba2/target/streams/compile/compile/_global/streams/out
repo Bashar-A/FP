@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba2\src\main\scala\Compositions.scala:56:41: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Array[C with B with A => Any][0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[A] => Option[D][0m
+[0m[[0m[31merror[0m] [0m[0m                                        func[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
