@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala:78:48: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : laba2.List[B][0m
+[0m[[0m[31merror[0m] [0m[0m required: B[0m
+[0m[[0m[31merror[0m] [0m[0m    def rev(a: A, l: List[B]): List[B] = Cons(f(a),l)[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

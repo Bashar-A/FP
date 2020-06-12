@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0mD:\Projects\FP\kursovaya\src\test\scala\laba3\SequenceTests.scala:10:15: Option[Int] and Int are unrelated: they will most likely never compare equal[0m
+[0m[[0m[33mwarn[0m] [0m[0m        assert(lastElement == res)[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
