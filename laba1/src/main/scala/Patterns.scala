@@ -93,9 +93,9 @@ object PatternMatching {
   def winsA(a: Hand, b: Hand): Result = {
     
     a.toString match {
-      case "rock" => if(b == "paper") Lose else if(b == "rock") Draw else Win
-      case "paper" => if(b == "scissors") Lose else if(b == "paper") Draw else Win
-      case "scissors" => if(b == "rock") Lose else if(b == "scissors") Draw else Win
+      case "rock" => if(b.toString == "paper") Lose else if(b.toString == "rock") Draw else Win
+      case "paper" => if(b.toString == "scissors") Lose else if(b.toString == "paper") Draw else Win
+      case "scissors" => if(b.toString == "rock") Lose else if(b.toString == "scissors") Draw else Win
     }
   }
 
