@@ -1,4 +1,4 @@
-package exercise1
+package laba1
 
 /** Напишите решение в виде функции. 
   * 
@@ -73,14 +73,14 @@ object PatternMatching {
 
 
   // примените функции из пункта (b) здесь, не изменяя сигнатуру
-  def testIsMaxAndMoritz(value: String): Boolean = IsMaxAndMoritz("asd")
+  def testIsMaxAndMoritz(value: String): Boolean = IsMaxAndMoritz(value)
 
   // c) Напишите функцию проверки является ли `value` четным 
   def isEven(value: Int): Boolean = value % 2 == 0
 
 
   // примените функции из пункта (c) здесь, не изменяя сигнатуру
-  def testIsEven(value: Int): Boolean = isEven(3)
+  def testIsEven(value: Int): Boolean = isEven(value)
 
 
   
@@ -91,11 +91,22 @@ object PatternMatching {
    *    Выиграет ли игрок `a`?
    */
   def winsA(a: Hand, b: Hand): Result = {
-    
-    a.toString match {
-      case "rock" => if(b.toString == "paper") Lose else if(b.toString == "rock") Draw else Win
-      case "paper" => if(b.toString == "scissors") Lose else if(b.toString == "paper") Draw else Win
-      case "scissors" => if(b.toString == "rock") Lose else if(b.toString == "scissors") Draw else Win
+    a match {
+      case Rock => b match {
+        case Rock => Draw
+        case Paper => Lose
+        case Scissor => Win
+        }
+      case Paper => b match {
+        case Rock => Win
+        case Paper => Draw
+        case Scissor => Lose
+        }
+      case Scissor => b match {
+        case Rock => Lose
+        case Paper => Win
+        case Scissor => Draw
+        }
     }
   }
 
