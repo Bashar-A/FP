@@ -1,12 +1,13 @@
 #Successful Tests
-#Fri Jun 12 16:41:14 MSK 2020
-laba2.RecursiveDataTests=1591969274149
-laba1.PatternsTests=1591969274416
-laba3.MapsTests=1591969274202
-laba1.HiOrderTests=1591969274000
-laba1.FunctionsTests=1591969274290
-laba3.AdtsTests=1591969274078
-laba2.RecursiveFuncTests=1591969274320
-laba3.StringsTests=1591969274063
-laba2.CompositionsTests=1591969274186
-laba4.TypeclassesTests=1591969274000
+#Fri Jun 12 18:23:10 MSK 2020
+laba2.RecursiveDataTests=1591975389669
+laba1.PatternsTests=1591975390938
+laba3.MapsTests=1591975389564
+laba1.HiOrderTests=1591975390605
+laba3.SequenceTests=1591975390636
+laba1.FunctionsTests=1591975389839
+laba3.AdtsTests=1591975389692
+laba2.RecursiveFuncTests=1591975390896
+laba3.StringsTests=1591975390883
+laba2.CompositionsTests=1591975389717
+laba4.TypeclassesTests=1591975390166

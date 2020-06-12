@@ -1,19 +1,19 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba2.CompositionsTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba2.RecursiveDataTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba4.TypeclassesTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba1.HiOrderTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.StringsTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba1.FunctionsTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.AdtsTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.MapsTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba2.RecursiveFuncTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba1.PatternsTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.SequenceTests, org.scalatest.tools.Framework$$anon$1@1988831d, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 829 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 25[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba2.RecursiveDataTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba4.TypeclassesTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.MapsTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.StringsTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba2.CompositionsTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.AdtsTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba1.FunctionsTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba2.RecursiveFuncTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba1.PatternsTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba1.HiOrderTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(laba3.SequenceTests, org.scalatest.tools.Framework$$anon$1@4b30252, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 21 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 29[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 11, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 24, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 29, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	laba3.AdtsTests[0m
 [0m[[0m[0mdebug[0m] [0m[0m	laba3.MapsTests[0m
@@ -24,7 +24,5 @@
 [0m[[0m[0mdebug[0m] [0m[0m	laba3.StringsTests[0m
 [0m[[0m[0mdebug[0m] [0m[0m	laba2.RecursiveFuncTests[0m
 [0m[[0m[0mdebug[0m] [0m[0m	laba1.PatternsTests[0m
+[0m[[0m[0mdebug[0m] [0m[0m	laba3.SequenceTests[0m
 [0m[[0m[0mdebug[0m] [0m[0m	laba1.HiOrderTests[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	laba3.SequenceTests[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

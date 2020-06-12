@@ -1,14 +1,6 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mSequenceTests:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- LastElement *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: List() (of class scala.collection.immutable.Nil$)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at laba3.Sequence$.testLastElement(Sequence.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at laba3.SequenceTests.$anonfun$new$1(SequenceTests.scala:9)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- LastElement[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Zip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- ForAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Palindrom[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- FlatMap[0m[0m
