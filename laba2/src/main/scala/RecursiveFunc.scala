@@ -1,3 +1,5 @@
+package laba2
+
 import scala.annotation.tailrec
 
 /** Реализуйте функции для решения следующих задач.
@@ -13,7 +15,6 @@ object RecursiveFunctions {
       case Cons(_, tail) => loop(tail, agg + 1)
       case Nil()         => agg
     }
-
     loop(as, 0)
   }
 
