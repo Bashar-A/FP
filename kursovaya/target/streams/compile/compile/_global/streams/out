@@ -1,5 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala:18:27: value age is not a member of Seq[laba3.Maps.User][0m
-[0m[[0m[31merror[0m] [0m[0mdid you mean take?[0m
-[0m[[0m[31merror[0m] [0m[0m      val age: Int = e._2.age[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:72:13: not found: value ReversableStringLike[0m
+[0m[[0m[31merror[0m] [0m[0m    println(ReversableStringLike.reverse("abc")) // cba[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:73:13: not found: value SmashIntLike[0m
+[0m[[0m[31merror[0m] [0m[0m    println(SmashIntLike.smash(3, 4)) // 7[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:74:13: not found: value SmashDoubleLike[0m
+[0m[[0m[31merror[0m] [0m[0m    println(SmashDoubleLike.smash(3.0, 4.0)) // 12[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:75:13: not found: value SmashStringLike[0m
+[0m[[0m[31merror[0m] [0m[0m    println(SmashStringLike.smash("ab", "cd")) // abcd[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
