@@ -1,0 +1,31 @@
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:3:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FunSuite[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:5:32: not found: type FunSuite[0m
+[0m[[0m[31merror[0m] [0m[0mclass TypeclassesTests extends FunSuite{[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:6:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test("ReversableString") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:9:32: not found: value Typeclasses[0m
+[0m[[0m[31merror[0m] [0m[0m        val reversableString = Typeclasses.testReversableString(string)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:12:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test("SmashInt") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:16:24: not found: value Typeclasses[0m
+[0m[[0m[31merror[0m] [0m[0m        val smashInt = Typeclasses.testSmashInt(a, b)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:19:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test("SmashDouble") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:23:27: not found: value Typeclasses[0m
+[0m[[0m[31merror[0m] [0m[0m        val smashDouble = Typeclasses.testSmashDouble(a, b)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:26:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test("SmashString") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\laba4\src\main\scala\TypeclassesTests.scala:30:27: not found: value Typeclasses[0m
+[0m[[0m[31merror[0m] [0m[0m        val smashString = Typeclasses.testSmashString(a, b)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
