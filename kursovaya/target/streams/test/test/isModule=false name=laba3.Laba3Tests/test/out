@@ -1,0 +1,18 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mLaba3Tests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Adts - GetNth[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Adts - Double[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Adts - IsEven[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Adts - SafeDivide[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Adts - GoodOldJava[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Maps - GroupUsers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Maps - NumberFrodos[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Maps - Underaged[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - LastElement[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - Zip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - ForAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - Palindrom[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - FlatMap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Strings - Uppercase[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Strings - Interpolations[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Strings - Computation[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Strings - TakeTwo[0m[0m

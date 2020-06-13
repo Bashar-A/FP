@@ -2,28 +2,28 @@ package laba4
 
 import org.scalatest.FunSuite
 
-class TypeclassesTests extends FunSuite{
-    test("ReversableString") {
+class Laba4Tests extends FunSuite{
+    test("Typeclasses - ReversableString") {
         val string = "abc"
         val res = "cba"
         val reversableString = Typeclasses.testReversableString(string)
         assert(reversableString == res)
     }
-    test("SmashInt") {
+    test("Typeclasses - SmashInt") {
         val a = 3
         val b = 4
         val res = 7
         val smashInt = Typeclasses.testSmashInt(a, b)
         assert(smashInt == res)
     }
-    test("SmashDouble") {
+    test("Typeclasses - SmashDouble") {
         val a = 3
         val b = 4
         val res = 12
         val smashDouble = Typeclasses.testSmashDouble(a, b)
         assert(smashDouble == res)
     }
-    test("SmashString") {
+    test("Typeclasses - SmashString") {
         val a = "ab"
         val b = "cd"
         val res = "abcd"

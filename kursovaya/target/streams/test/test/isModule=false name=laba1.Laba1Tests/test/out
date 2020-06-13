@@ -1,4 +1,9 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mPatternsTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLaba1Tests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Functions - CircleArea[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Functions - RectangleCurriedArea[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Functions - RectangleUcArea[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- HigherOrder - NTimes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- HigherOrder - AnonymousNTimes[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- PatternMatching - IntToString[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- PatternMatching - IsMaxAndMoritz[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- PatternMatching - IsEven[0m[0m

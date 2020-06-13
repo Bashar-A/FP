@@ -1,6 +1,6 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mSequenceTests:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- LastElement[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Zip[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- ForAll[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Palindrom[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- FlatMap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - LastElement[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - Zip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - ForAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - Palindrom[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sequence - FlatMap[0m[0m
