@@ -18,17 +18,25 @@ class Laba3Tests extends FunSuite{
         assert(double == res)
     }
     test("Adts - IsEven") {
-        val n = 13
-        val res = Left("Нечетное число")
-        val isEven = Adts.testIsEven(n)
-        assert(isEven == res)
+        val n1 = 13
+        val res1 = Left("Нечетное число")
+        val isEven1 = Adts.testIsEven(n1)
+        assert(isEven1 == res1)
+        val n2 = 12
+        val res2 = Right(12)
+        val isEven2 = Adts.testIsEven(n2)
+        assert(isEven2 == res2)
     }
     test("Adts - SafeDivide") {
         val n1 = 20
         val n2 = 0
-        val res = Left("Вы не можете делить на ноль")
-        val safeDivide = Adts.testSafeDivide(n1,n2)
-        assert(safeDivide == res)
+        val n3 = 1
+        val res1 = Left("Вы не можете делить на ноль")
+        val safeDivide1 = Adts.testSafeDivide(n1,n2)
+        assert(safeDivide1 == res1)
+        val res2 = Right(20)
+        val safeDivide2 = Adts.testSafeDivide(n1,n3)
+        assert(safeDivide2 == res2)
     }
     test("Adts - GoodOldJava") {
         val string = "test"

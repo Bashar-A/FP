@@ -1,0 +1,1071 @@
+<scoverage 
+statement-count="196" statements-invoked="161" statement-rate="82.14" branch-rate="62.50" version="1.0" timestamp="1592056206092">
+    <packages>
+        <package name="laba1" statement-count="48" statements-invoked="36" statement-rate="75.00">
+            <classes>
+                <class 
+                name="laba1.Functions" filename="laba1\Functions.scala" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba1/Functions/testRectangleUc" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="Functions" class-type="Object" full-class-name="laba1.Functions" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Functions.scala" method="testRectangleUc" start="1157" end="1176" line="38" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/Functions/testRectangleCurried" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="Functions" class-type="Object" full-class-name="laba1.Functions" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Functions.scala" method="testRectangleCurried" start="867" end="893" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/Functions/circleArea" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="Functions" class-type="Object" full-class-name="laba1.Functions" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Functions.scala" method="circleArea" start="435" end="450" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/Functions/testCircle" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="Functions" class-type="Object" full-class-name="laba1.Functions" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Functions.scala" method="testCircle" start="561" end="574" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/Functions/rectangleArea" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="Functions" class-type="Object" full-class-name="laba1.Functions" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Functions.scala" method="rectangleArea" start="1025" end="1030" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/Functions/rectangleAreaCurried" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="Functions" class-type="Object" full-class-name="laba1.Functions" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Functions.scala" method="rectangleAreaCurried" start="731" end="736" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba1.HigherOrder" filename="laba1\HiOrder.scala" statement-count="10" statements-invoked="9" statement-rate="90.00" branch-rate="50.00">
+                    <methods>
+                        <method 
+                        name="laba1/HigherOrder/nTimes" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="nTimes" start="404" end="415" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="nTimes" start="408" end="415" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/HigherOrder/testAnonymousNTimes" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="testAnonymousNTimes" start="848" end="864" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="testAnonymousNTimes" start="855" end="857" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/HigherOrder/&lt;none&gt;" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="&lt;none&gt;" start="156" end="161" line="7" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="&lt;none&gt;" start="114" end="119" line="6" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/HigherOrder/an" statement-count="3" statements-invoked="2" statement-rate="66.67" branch-rate="50.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="an" start="789" end="790" line="21" branch="true" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="an" start="782" end="783" line="21" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="an" start="775" end="780" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/HigherOrder/testNTimes" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="HigherOrder" class-type="Object" full-class-name="laba1.HigherOrder" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\HiOrder.scala" method="testNTimes" start="551" end="569" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba1.PatternMatching" filename="laba1\Patterns.scala" statement-count="32" statements-invoked="21" statement-rate="65.62" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba1/PatternMatching/isEven" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="isEven" start="2003" end="2017" line="79" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/at" statement-count="4" statements-invoked="1" statement-rate="25.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="at" start="1167" end="1178" line="50" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="at" start="1253" end="1266" line="53" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="at" start="1223" end="1236" line="52" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="at" start="1195" end="1206" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/retWeight" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="retWeight" start="3161" end="3163" line="124" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/testIntToString" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="testIntToString" start="1392" end="1401" line="58" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/winsA" statement-count="9" statements-invoked="4" statement-rate="44.44" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2522" end="2525" line="98" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2642" end="2646" line="103" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2765" end="2769" line="108" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2493" end="2497" line="97" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2613" end="2617" line="102" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2737" end="2740" line="107" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2710" end="2714" line="106" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2466" end="2470" line="96" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="winsA" start="2587" end="2590" line="101" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/IsMaxAndMoritz" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="IsMaxAndMoritz" start="1669" end="1673" line="67" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="IsMaxAndMoritz" start="1746" end="1751" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="IsMaxAndMoritz" start="1644" end="1648" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="IsMaxAndMoritz" start="1725" end="1729" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="IsMaxAndMoritz" start="1697" end="1701" line="68" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/testExtractMammalWeight" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="testExtractMammalWeight" start="3296" end="3313" line="130" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/testWinsA" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="testWinsA" start="2905" end="2915" line="114" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/testIsMaxAndMoritz" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="testIsMaxAndMoritz" start="1882" end="1903" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/change" statement-count="6" statements-invoked="3" statement-rate="50.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="change" start="3512" end="3537" line="136" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="change" start="3568" end="3593" line="137" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="change" start="3586" end="3592" line="137" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="change" start="3530" end="3536" line="136" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="change" start="3573" end="3584" line="137" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="change" start="3517" end="3528" line="136" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/testUpdateFood" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="testUpdateFood" start="3742" end="3756" line="144" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba1/PatternMatching/testIsEven" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba1" class="PatternMatching" class-type="Object" full-class-name="laba1.PatternMatching" source="D:\Projects\FP\kursovaya\src\main\scala\laba1\Patterns.scala" method="testIsEven" start="2125" end="2138" line="83" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="laba2" statement-count="46" statements-invoked="39" statement-rate="84.78">
+            <classes>
+                <class 
+                name="laba2.None" filename="laba2\Compositions.scala" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method name="laba2/None/map" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="None" class-type="Class" full-class-name="laba2.None" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="map" start="1207" end="1213" line="28" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+                        </method>
+                        <method name="laba2/None/flatMap" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="None" class-type="Class" full-class-name="laba2.None" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="flatMap" start="1264" end="1270" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+                        </method>
+                    </methods>
+</class>
+                <class 
+                name="laba2.RecursiveData" filename="laba2\RecursiveData.scala" statement-count="5" statements-invoked="3" statement-rate="60.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba2/RecursiveData/b" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveData" class-type="Object" full-class-name="laba2.RecursiveData" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveData.scala" method="b" start="726" end="728" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveData/a" statement-count="2" statements-invoked="1" statement-rate="50.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveData" class-type="Object" full-class-name="laba2.RecursiveData" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveData.scala" method="a" start="354" end="358" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveData" class-type="Object" full-class-name="laba2.RecursiveData" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveData.scala" method="a" start="374" end="379" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveData/testListIntEmpty" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveData" class-type="Object" full-class-name="laba2.RecursiveData" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveData.scala" method="testListIntEmpty" start="509" end="516" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveData/testListIntHead" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveData" class-type="Object" full-class-name="laba2.RecursiveData" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveData.scala" method="testListIntHead" start="853" end="860" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba2.Compositions" filename="laba2\Compositions.scala" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba2/Compositions/testForComprehension" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="Compositions" class-type="Object" full-class-name="laba2.Compositions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="testForComprehension" start="2486" end="2547" line="58" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="Compositions" class-type="Object" full-class-name="laba2.Compositions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="testForComprehension" start="2543" end="2547" line="59" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="Compositions" class-type="Object" full-class-name="laba2.Compositions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="testForComprehension" start="2346" end="2547" line="56" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="Compositions" class-type="Object" full-class-name="laba2.Compositions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="testForComprehension" start="2437" end="2547" line="57" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/Compositions/testMapFlatMap" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="Compositions" class-type="Object" full-class-name="laba2.Compositions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="testMapFlatMap" start="1982" end="2012" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/Compositions/testCompose" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="Compositions" class-type="Object" full-class-name="laba2.Compositions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="testCompose" start="1619" end="1640" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba2.RecursiveFunctions" filename="laba2\RecursiveFunc.scala" statement-count="28" statements-invoked="25" statement-rate="89.29" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba2/RecursiveFunctions/testFlatMap" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="testFlatMap" start="3000" end="3016" line="89" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/testMap" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="testMap" start="1792" end="1804" line="55" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/rever" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="rever" start="1455" end="1468" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="rever" start="1460" end="1464" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="rever" start="859" end="869" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/loop" statement-count="7" statements-invoked="4" statement-rate="57.14" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="552" end="571" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="1016" end="1030" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="1045" end="1062" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="1056" end="1061" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="563" end="570" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="617" end="628" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop" start="1007" end="1032" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/rev" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="rev" start="2649" end="2663" line="78" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="rev" start="2656" end="2660" line="78" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/testReverse" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="testReverse" start="1188" end="1201" line="38" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/testAppend" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="testAppend" start="2220" end="2231" line="68" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/append" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="append" start="2062" end="2083" line="64" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="append" start="2070" end="2082" line="64" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba2/RecursiveFunctions/loop2" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="2842" end="2847" line="84" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="2760" end="2772" line="81" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="1604" end="1625" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="1638" end="1655" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="2798" end="2817" line="82" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="1612" end="1624" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="1566" end="1578" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="2806" end="2816" line="82" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="1649" end="1654" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="RecursiveFunctions" class-type="Object" full-class-name="laba2.RecursiveFunctions" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\RecursiveFunc.scala" method="loop2" start="2830" end="2848" line="84" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba2.Some" filename="laba2\Compositions.scala" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba2/Some/flatMap" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="Some" class-type="Class" full-class-name="laba2.Some" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="flatMap" start="1113" end="1117" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="Some" class-type="Class" full-class-name="laba2.Some" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="flatMap" start="1115" end="1116" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method name="laba2/Some/map" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba2" class="Some" class-type="Class" full-class-name="laba2.Some" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="map" start="1057" end="1061" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="Some" class-type="Class" full-class-name="laba2.Some" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="map" start="1059" end="1060" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba2" class="Some" class-type="Class" full-class-name="laba2.Some" source="D:\Projects\FP\kursovaya\src\main\scala\laba2\Compositions.scala" method="map" start="1052" end="1062" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+                        </method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="laba3" statement-count="80" statements-invoked="72" statement-rate="90.00">
+            <classes>
+                <class 
+                name="laba3.Maps" filename="laba3\Maps.scala" statement-count="21" statements-invoked="21" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba3/Maps/testUnderaged" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testUnderaged" start="1484" end="1498" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testUnderaged" start="1468" end="1499" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Maps/testNumberFrodos" statement-count="7" statements-invoked="7" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1151" end="1151" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1155" end="1190" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1118" end="1119" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1201" end="1207" line="35" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1125" end="1207" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1151" end="1151" line="34" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testNumberFrodos" start="1201" end="1207" line="35" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Maps/testGroupUsers" statement-count="12" statements-invoked="12" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="706" end="715" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="746" end="770" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="557" end="563" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="637" end="642" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="589" end="590" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="596" end="680" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="754" end="769" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="521" end="526" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="696" end="715" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="721" end="770" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="543" end="564" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Maps" class-type="Object" full-class-name="laba3.Maps" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Maps.scala" method="testGroupUsers" start="660" end="673" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba3.Strings" filename="laba3\Strings.scala" statement-count="9" statements-invoked="8" statement-rate="88.89" branch-rate="50.00">
+                    <methods>
+                        <method 
+                        name="laba3/Strings/testTakeTwo" statement-count="4" statements-invoked="3" statement-rate="75.00" branch-rate="50.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testTakeTwo" start="1196" end="1207" line="35" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testTakeTwo" start="1187" end="1190" line="35" branch="true" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testTakeTwo" start="1196" end="1207" line="35" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testTakeTwo" start="1170" end="1185" line="35" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Strings/testComputation" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testComputation" start="1013" end="1016" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testComputation" start="898" end="1001" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testComputation" start="898" end="1017" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Strings/testUppercase" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testUppercase" start="328" end="345" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Strings/testInterpolations" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Strings" class-type="Object" full-class-name="laba3.Strings" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Strings.scala" method="testInterpolations" start="532" end="591" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba3.Sequence" filename="laba3\Sequence.scala" statement-count="24" statements-invoked="22" statement-rate="91.67" branch-rate="50.00">
+                    <methods>
+                        <method 
+                        name="laba3/Sequence/testLastElement" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="testLastElement" start="514" end="523" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="testLastElement" start="550" end="571" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Sequence/loop" statement-count="19" statements-invoked="17" statement-rate="89.47" branch-rate="50.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1011" end="1029" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1396" end="1401" line="47" branch="true" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1691" end="1695" line="59" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1084" end="1087" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1346" end="1356" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1718" end="1731" line="60" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="941" end="960" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1396" end="1401" line="47" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="992" end="1030" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1438" end="1453" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1011" end="1029" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1421" end="1425" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1073" end="1088" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1671" end="1696" line="59" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="941" end="960" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1358" end="1374" line="45" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1753" end="1767" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1358" end="1374" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="loop" start="1763" end="1766" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Sequence/testFlatMap" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="testFlatMap" start="1946" end="1960" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="testFlatMap" start="1928" end="1931" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Sequence" class-type="Object" full-class-name="laba3.Sequence" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Sequence.scala" method="testFlatMap" start="1907" end="1961" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba3.Adts" filename="laba3\Adts.scala" statement-count="26" statements-invoked="21" statement-rate="80.77" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba3/Adts/testGetNth" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="testGetNth" start="1039" end="1054" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/IsEven" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="IsEven" start="1584" end="1628" line="60" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="IsEven" start="1611" end="1627" line="60" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="IsEven" start="1688" end="1696" line="62" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="IsEven" start="1596" end="1606" line="60" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="IsEven" start="1658" end="1665" line="61" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/GoodOldJava" statement-count="4" statements-invoked="3" statement-rate="75.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GoodOldJava" start="2540" end="2550" line="83" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GoodOldJava" start="2452" end="2463" line="81" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GoodOldJava" start="2506" end="2516" line="82" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GoodOldJava" start="2448" end="2473" line="81" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/Double" statement-count="3" statements-invoked="2" statement-rate="66.67" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="Double" start="1210" end="1215" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="Double" start="1237" end="1241" line="51" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="Double" start="1203" end="1216" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/GetNth" statement-count="5" statements-invoked="2" statement-rate="40.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GetNth" start="836" end="843" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GetNth" start="893" end="897" line="39" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GetNth" start="864" end="868" line="38" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GetNth" start="831" end="844" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="GetNth" start="886" end="898" line="39" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/SafeDivide" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="SafeDivide" start="2076" end="2084" line="71" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="SafeDivide" start="2033" end="2043" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="SafeDivide" start="2113" end="2148" line="72" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="SafeDivide" start="2037" end="2042" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/testDouble" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="testDouble" start="1373" end="1382" line="56" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/testSafeDivide" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="testSafeDivide" start="2285" end="2301" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/testGoodOldJava" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="testGoodOldJava" start="2699" end="2723" line="87" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba3/Adts/testIsEven" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba3" class="Adts" class-type="Object" full-class-name="laba3.Adts" source="D:\Projects\FP\kursovaya\src\main\scala\laba3\Adts.scala" method="testIsEven" start="1821" end="1830" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="laba4" statement-count="22" statements-invoked="14" statement-rate="63.64">
+            <classes>
+                <class 
+                name="laba4.Typeclasses.Smash" filename="laba4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/Smash/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Smash" class-type="Object" full-class-name="laba4.Typeclasses.Smash" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="smash" start="902" end="934" line="36" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba4.Typeclasses.Reversable.ReversableStringLike" filename="laba4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/ReversableStringLike/reverse" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="ReversableStringLike" class-type="Object" full-class-name="laba4.Typeclasses.Reversable.ReversableStringLike" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="reverse" start="426" end="437" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba4.Typeclasses" filename="laba4\Typeclasses.scala" statement-count="16" statements-invoked="8" statement-rate="50.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/Typeclasses/testSmashString" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testSmashString" start="1964" end="1964" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testSmashString" start="1953" end="1969" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba4/Typeclasses/main" statement-count="8" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2077" end="2095" line="73" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2107" end="2141" line="74" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2115" end="2140" line="74" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2153" end="2189" line="75" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2020" end="2056" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2028" end="2055" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2069" end="2096" line="73" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="main" start="2161" end="2188" line="75" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba4/Typeclasses/testSmashDouble" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testSmashDouble" start="1689" end="1689" line="61" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testSmashDouble" start="1678" end="1694" line="61" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba4/Typeclasses/testSmashInt" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testSmashInt" start="1549" end="1565" line="58" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testSmashInt" start="1560" end="1560" line="58" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="laba4/Typeclasses/testReversableString" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testReversableString" start="612" end="635" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="laba4" class="Typeclasses" class-type="Object" full-class-name="laba4.Typeclasses" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="testReversableString" start="630" end="630" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba4.Typeclasses.Reversable" filename="laba4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/Reversable/reverse" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="Reversable" class-type="Object" full-class-name="laba4.Typeclasses.Reversable" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="reverse" start="267" end="303" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba4.Typeclasses.Smash.SmashIntLike" filename="laba4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/SmashIntLike/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="SmashIntLike" class-type="Object" full-class-name="laba4.Typeclasses.Smash.SmashIntLike" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="smash" start="1039" end="1044" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba4.Typeclasses.Smash.SmashDoubleLike" filename="laba4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/SmashDoubleLike/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="SmashDoubleLike" class-type="Object" full-class-name="laba4.Typeclasses.Smash.SmashDoubleLike" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="smash" start="1164" end="1169" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="laba4.Typeclasses.Smash.SmashStringLike" filename="laba4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="laba4/SmashStringLike/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="laba4" class="SmashStringLike" class-type="Object" full-class-name="laba4.Typeclasses.Smash.SmashStringLike" source="D:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala" method="smash" start="1289" end="1300" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

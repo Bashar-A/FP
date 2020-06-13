@@ -1,13 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:72:13: not found: value ReversableStringLike[0m
-[0m[[0m[31merror[0m] [0m[0m    println(ReversableStringLike.reverse("abc")) // cba[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:73:13: not found: value SmashIntLike[0m
-[0m[[0m[31merror[0m] [0m[0m    println(SmashIntLike.smash(3, 4)) // 7[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:74:13: not found: value SmashDoubleLike[0m
-[0m[[0m[31merror[0m] [0m[0m    println(SmashDoubleLike.smash(3.0, 4.0)) // 12[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\main\scala\laba4\Typeclasses.scala:75:13: not found: value SmashStringLike[0m
-[0m[[0m[31merror[0m] [0m[0m    println(SmashStringLike.smash("ab", "cd")) // abcd[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[0minfo[0m] [0m[0mCleaning datadir [D:\Projects\FP\kursovaya\target\scala-2.13/scoverage-data][0m
+[0m[[0m[0minfo[0m] [0m[0mBeginning coverage instrumentation[0m
+[0m[[0m[0minfo[0m] [0m[0mInstrumentation completed [196 statements][0m
+[0m[[0m[0minfo[0m] [0m[0mWrote instrumentation file [D:\Projects\FP\kursovaya\target\scala-2.13\scoverage-data\scoverage.coverage][0m
+[0m[[0m[0minfo[0m] [0m[0mWill write measurement data to [D:\Projects\FP\kursovaya\target\scala-2.13/scoverage-data][0m

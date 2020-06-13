@@ -1,0 +1,676 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          laba3\Adts.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>//import org.apache.logging.log4j.core.pattern.EqualsIgnoreCaseReplacementConverter
+</span>2 <span style=''>package laba3
+</span>3 <span style=''>import scala.util.{Failure, Success, Try}
+</span>4 <span style=''>
+</span>5 <span style=''>/** Реализуйте следующие функции.
+</span>6 <span style=''> *
+</span>7 <span style=''> * List(1, 2) match {
+</span>8 <span style=''> *   case head :: tail =&gt; ???
+</span>9 <span style=''> *   case Nil          =&gt; ???
+</span>10 <span style=''> *   case l            =&gt; ???
+</span>11 <span style=''> * }
+</span>12 <span style=''> *
+</span>13 <span style=''> * Option(1) match {
+</span>14 <span style=''> *   case Some(a) =&gt; ???
+</span>15 <span style=''> *   case None    =&gt; ???
+</span>16 <span style=''> * }
+</span>17 <span style=''> *
+</span>18 <span style=''> * Either.cond(true, 1, &quot;right&quot;) match {
+</span>19 <span style=''> *   case Left(i)  =&gt; ???
+</span>20 <span style=''> *   case Right(s) =&gt; ???
+</span>21 <span style=''> * }
+</span>22 <span style=''> *
+</span>23 <span style=''> * Try(impureExpression()) match {
+</span>24 <span style=''> *   case Success(a)     =&gt; ???
+</span>25 <span style=''> *   case Failure(error) =&gt; ???
+</span>26 <span style=''> * }
+</span>27 <span style=''> *
+</span>28 <span style=''> * Try(impureExpression()).toEither
+</span>29 <span style=''> *
+</span>30 <span style=''> */
+</span>31 <span style=''>object Adts {
+</span>32 <span style=''>
+</span>33 <span style=''>  // a) Дан List[Int], верните элемент с индексом n
+</span>34 <span style=''>
+</span>35 <span style=''>  def GetNth(list: List[Int], n: Int): Option[Int] = {
+</span>36 <span style=''>    list match {
+</span>37 <span style=''>      case head :: tail =&gt; </span><span style='background: #AEF1AE'>Some(list(n))</span><span style=''>
+</span>38 <span style=''>      case Nil =&gt; </span><span style='background: #F0ADAD'>null</span><span style=''>
+</span>39 <span style=''>      case l =&gt; </span><span style='background: #F0ADAD'>Option(l(n))</span><span style=''>
+</span>40 <span style=''>    }
+</span>41 <span style=''>  }
+</span>42 <span style=''>
+</span>43 <span style=''>  // примените функцию из пункта (a) здесь, не изменяйте сигнатуру
+</span>44 <span style=''>  def testGetNth(list: List[Int], n: Int): Option[Int] = </span><span style='background: #AEF1AE'>GetNth(list, n)</span><span style=''>
+</span>45 <span style=''>
+</span>46 <span style=''>  // b) Напишите функцию, увеличивающую число в два раза.
+</span>47 <span style=''>
+</span>48 <span style=''>  def Double(n: Option[Int]): Option[Int] = {
+</span>49 <span style=''>    n match {
+</span>50 <span style=''>      case Some(a) =&gt; </span><span style='background: #AEF1AE'>Option(a * 2)</span><span style=''>
+</span>51 <span style=''>      case None =&gt; </span><span style='background: #F0ADAD'>null</span><span style=''>
+</span>52 <span style=''>    }
+</span>53 <span style=''>  }
+</span>54 <span style=''>
+</span>55 <span style=''>  // примените функцию из пункта (b) здесь, не изменяйте сигнатуру
+</span>56 <span style=''>  def testDouble(n: Option[Int]): Option[Int] = </span><span style='background: #AEF1AE'>Double(n)</span><span style=''>
+</span>57 <span style=''>
+</span>58 <span style=''>  // c) Напишите функцию, проверяющую является ли число типа Int четным. Если так, верните Right. В противном случае, верните Left(&quot;Нечетное число.&quot;).
+</span>59 <span style=''>
+</span>60 <span style=''>  def IsEven(n: Int): Either[String, Int] = </span><span style='background: #AEF1AE'>Either.cond(n % 2 == 0, n, &quot;Нечетное число&quot;)</span><span style=''> match {
+</span>61 <span style=''>    case Left(i) =&gt; </span><span style='background: #AEF1AE'>Left(i)</span><span style=''>
+</span>62 <span style=''>    case Right(s) =&gt; </span><span style='background: #AEF1AE'>Right(s)</span><span style=''>
+</span>63 <span style=''>  }
+</span>64 <span style=''>
+</span>65 <span style=''>  // примените функцию из пункта (c) здесь, не изменяйте сигнатуру
+</span>66 <span style=''>  def testIsEven(n: Int): Either[String, Int] = </span><span style='background: #AEF1AE'>IsEven(n)</span><span style=''>
+</span>67 <span style=''>
+</span>68 <span style=''>  // d) Напишите функцию, реализующую безопасное деление целых чисел. Верните Right с результатом или Left(&quot;Вы не можете делить на ноль.&quot;).
+</span>69 <span style=''>
+</span>70 <span style=''>  def SafeDivide(a: Int, b: Int): Either[String, Int] = </span><span style='background: #AEF1AE'>Try(a / b)</span><span style=''> match {
+</span>71 <span style=''>    case Success(a) =&gt; </span><span style='background: #AEF1AE'>Right(a)</span><span style=''>
+</span>72 <span style=''>    case Failure(error) =&gt; </span><span style='background: #AEF1AE'>Left(&quot;Вы не можете делить на ноль&quot;)</span><span style=''>
+</span>73 <span style=''>  }
+</span>74 <span style=''>
+</span>75 <span style=''>  // примените функцию из пункта (d) здесь, не изменяйте сигнатуру
+</span>76 <span style=''>  def testSafeDivide(a: Int, b: Int): Either[String, Int] = </span><span style='background: #AEF1AE'>SafeDivide(a, b)</span><span style=''>
+</span>77 <span style=''>
+</span>78 <span style=''>  // e) Обработайте исключения функции с побочным эффектом вернув 0.
+</span>79 <span style=''>
+</span>80 <span style=''>  def GoodOldJava(impure: String =&gt; Int, str: String): Try[Int] =
+</span>81 <span style=''>    </span><span style='background: #AEF1AE'>Try(impure(str)).toEither</span><span style=''> match {
+</span>82 <span style=''>      case Right(k) =&gt; </span><span style='background: #AEF1AE'>Success(k)</span><span style=''>
+</span>83 <span style=''>      case Left(l) =&gt; </span><span style='background: #F0ADAD'>Success(0)</span><span style=''>
+</span>84 <span style=''>    }
+</span>85 <span style=''>
+</span>86 <span style=''>  // примените функцию из пункта (e) здесь, не изменяйте сигнатуру
+</span>87 <span style=''>  def testGoodOldJava(impure: String =&gt; Int, str: String): Try[Int] = </span><span style='background: #AEF1AE'>GoodOldJava(impure, str)</span><span style=''>
+</span>88 <span style=''>
+</span>89 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          95
+        </td>
+        <td>
+          836
+          -
+          843
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOps.apply
+        </td>
+        <td style="background: #AEF1AE">
+          list.apply(n)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          96
+        </td>
+        <td>
+          831
+          -
+          844
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[Int](list.apply(n))
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          97
+        </td>
+        <td>
+          864
+          -
+          868
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          null
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          98
+        </td>
+        <td>
+          893
+          -
+          897
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOps.apply
+        </td>
+        <td style="background: #F0ADAD">
+          l.apply(n)
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          99
+        </td>
+        <td>
+          886
+          -
+          898
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Option.apply[Int](l.apply(n))
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          1039
+          -
+          1054
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Adts.GetNth
+        </td>
+        <td style="background: #AEF1AE">
+          Adts.this.GetNth(list, n)
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          101
+        </td>
+        <td>
+          1210
+          -
+          1215
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.*
+        </td>
+        <td style="background: #AEF1AE">
+          a.*(2)
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          102
+        </td>
+        <td>
+          1203
+          -
+          1216
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Option.apply[Int](a.*(2))
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          103
+        </td>
+        <td>
+          1237
+          -
+          1241
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          null
+        </td>
+      </tr><tr>
+        <td>
+          56
+        </td>
+        <td>
+          104
+        </td>
+        <td>
+          1373
+          -
+          1382
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Adts.Double
+        </td>
+        <td style="background: #AEF1AE">
+          Adts.this.Double(n)
+        </td>
+      </tr><tr>
+        <td>
+          60
+        </td>
+        <td>
+          107
+        </td>
+        <td>
+          1584
+          -
+          1628
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Either.cond
+        </td>
+        <td style="background: #AEF1AE">
+          scala.`package`.Either.cond[String, Int](n.%(2).==(0), n, &quot;Нечетное число&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          60
+        </td>
+        <td>
+          106
+        </td>
+        <td>
+          1611
+          -
+          1627
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Нечетное число&quot;
+        </td>
+      </tr><tr>
+        <td>
+          60
+        </td>
+        <td>
+          105
+        </td>
+        <td>
+          1596
+          -
+          1606
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #AEF1AE">
+          n.%(2).==(0)
+        </td>
+      </tr><tr>
+        <td>
+          61
+        </td>
+        <td>
+          108
+        </td>
+        <td>
+          1658
+          -
+          1665
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Left.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.`package`.Left.apply[String, Nothing](i)
+        </td>
+      </tr><tr>
+        <td>
+          62
+        </td>
+        <td>
+          109
+        </td>
+        <td>
+          1688
+          -
+          1696
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Right.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.`package`.Right.apply[Nothing, Int](s)
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          110
+        </td>
+        <td>
+          1821
+          -
+          1830
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Adts.IsEven
+        </td>
+        <td style="background: #AEF1AE">
+          Adts.this.IsEven(n)
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          112
+        </td>
+        <td>
+          2033
+          -
+          2043
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Try.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.util.Try.apply[Int](a./(b))
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          111
+        </td>
+        <td>
+          2037
+          -
+          2042
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int./
+        </td>
+        <td style="background: #AEF1AE">
+          a./(b)
+        </td>
+      </tr><tr>
+        <td>
+          71
+        </td>
+        <td>
+          113
+        </td>
+        <td>
+          2076
+          -
+          2084
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Right.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.`package`.Right.apply[Nothing, Int](a)
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          114
+        </td>
+        <td>
+          2113
+          -
+          2148
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Left.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.`package`.Left.apply[String, Nothing](&quot;Вы не можете делить на ноль&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          76
+        </td>
+        <td>
+          115
+        </td>
+        <td>
+          2285
+          -
+          2301
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Adts.SafeDivide
+        </td>
+        <td style="background: #AEF1AE">
+          Adts.this.SafeDivide(a, b)
+        </td>
+      </tr><tr>
+        <td>
+          81
+        </td>
+        <td>
+          116
+        </td>
+        <td>
+          2452
+          -
+          2463
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.apply
+        </td>
+        <td style="background: #AEF1AE">
+          impure.apply(str)
+        </td>
+      </tr><tr>
+        <td>
+          81
+        </td>
+        <td>
+          117
+        </td>
+        <td>
+          2448
+          -
+          2473
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.util.Try.toEither
+        </td>
+        <td style="background: #AEF1AE">
+          scala.util.Try.apply[Int](impure.apply(str)).toEither
+        </td>
+      </tr><tr>
+        <td>
+          82
+        </td>
+        <td>
+          118
+        </td>
+        <td>
+          2506
+          -
+          2516
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Success.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.util.Success.apply[Int](k)
+        </td>
+      </tr><tr>
+        <td>
+          83
+        </td>
+        <td>
+          119
+        </td>
+        <td>
+          2540
+          -
+          2550
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Success.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.util.Success.apply[Int](0)
+        </td>
+      </tr><tr>
+        <td>
+          87
+        </td>
+        <td>
+          120
+        </td>
+        <td>
+          2699
+          -
+          2723
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Adts.GoodOldJava
+        </td>
+        <td style="background: #AEF1AE">
+          Adts.this.GoodOldJava(impure, str)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

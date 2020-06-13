@@ -16,8 +16,10 @@ class Laba1Tests extends FunSuite{
         assert(rectangleArea == 12.0)
     }
     test("HigherOrder - NTimes") {
-        val nTimes = HigherOrder.testNTimes(HigherOrder.plus, 3 ,2 ,5)
-        assert(nTimes == 25)
+        val nTimes1 = HigherOrder.testNTimes(HigherOrder.plus, 3 ,2 ,5)
+        assert(nTimes1 == 25)
+        val nTimes2 = HigherOrder.testNTimes(HigherOrder.multiply, 3 ,2 ,5)
+        assert(nTimes2 == 30)
     }
     test("HigherOrder - AnonymousNTimes") {
         val anonymousNTimes = HigherOrder.testAnonymousNTimes(3 ,2 ,5)
@@ -28,23 +30,34 @@ class Laba1Tests extends FunSuite{
         assert(intToString == "it is two")
     }
     test("PatternMatching - IsMaxAndMoritz") {
-        val isMaxAndMoritz = PatternMatching.testIsMaxAndMoritz("Max")
-        assert(isMaxAndMoritz == true)
+        assert(PatternMatching.testIsMaxAndMoritz("Max") == true)
+        assert(PatternMatching.testIsMaxAndMoritz("max") == true)
+        assert(PatternMatching.testIsMaxAndMoritz("Moritz") == true)
+        assert(PatternMatching.testIsMaxAndMoritz("moritz") == true)
+        assert(PatternMatching.testIsMaxAndMoritz("test") == false)
     }
     test("PatternMatching - IsEven") {
         val isEven = PatternMatching.testIsEven(2)
         assert(isEven == true)
     }
     test("PatternMatching - WinsA") {
-        val winsA = PatternMatching.testWinsA(PatternMatching.Paper,PatternMatching.Rock)
-        assert(winsA == PatternMatching.Win)
+        val winsA1 = PatternMatching.testWinsA(PatternMatching.Paper,PatternMatching.Scissor)
+        assert(winsA1 == PatternMatching.Lose)
+        val winsA2 = PatternMatching.testWinsA(PatternMatching.Rock,PatternMatching.Scissor)
+        assert(winsA2 == PatternMatching.Win)
+        val winsA3 = PatternMatching.testWinsA(PatternMatching.Scissor,PatternMatching.Scissor)
+        assert(winsA3 == PatternMatching.Draw)
     }
     test("PatternMatching - ExtractMammalWeight") {
-        val extractMammalWeight = PatternMatching.testExtractMammalWeight(PatternMatching.Mammal("mammal", PatternMatching.Meat, 100))
-        assert(extractMammalWeight == 100)
+        val extractMammalWeight1 = PatternMatching.testExtractMammalWeight(PatternMatching.Mammal("mammal", PatternMatching.Meat, 100))
+        assert(extractMammalWeight1 == 100)
+        val extractMammalWeight2 = PatternMatching.testExtractMammalWeight(PatternMatching.Fish("fish", PatternMatching.Meat))
+        assert(extractMammalWeight2 == -1)
     }
     test("PatternMatching - UpdateFood") {
-        val updateFood = PatternMatching.testUpdateFood(PatternMatching.Fish("mammal", PatternMatching.Meat))
-        assert(updateFood.food == PatternMatching.Plants)
+        val updateFood1 = PatternMatching.testUpdateFood(PatternMatching.Fish("fish", PatternMatching.Meat))
+        assert(updateFood1.food == PatternMatching.Plants)
+        val updateFood2 = PatternMatching.testUpdateFood(PatternMatching.Mammal("mammal", PatternMatching.Meat, 100))
+        assert(updateFood2.food == PatternMatching.Meat)
     }
 }

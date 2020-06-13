@@ -1,13 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\test\scala\laba4\TypeclassesTests.scala:9:32: not found: value Typeclasses[0m
-[0m[[0m[31merror[0m] [0m[0m        val reversableString = Typeclasses.testReversableString(string)[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\test\scala\laba4\TypeclassesTests.scala:16:24: not found: value Typeclasses[0m
-[0m[[0m[31merror[0m] [0m[0m        val smashInt = Typeclasses.testSmashInt(a, b)[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\test\scala\laba4\TypeclassesTests.scala:23:27: not found: value Typeclasses[0m
-[0m[[0m[31merror[0m] [0m[0m        val smashDouble = Typeclasses.testSmashDouble(a, b)[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Projects\FP\kursovaya\src\test\scala\laba4\TypeclassesTests.scala:30:27: not found: value Typeclasses[0m
-[0m[[0m[31merror[0m] [0m[0m        val smashString = Typeclasses.testSmashString(a, b)[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.11.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

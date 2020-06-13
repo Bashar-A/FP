@@ -1,0 +1,374 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          laba2\Compositions.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package laba2
+</span>2 <span style=''>
+</span>3 <span style=''>/** Option представляет собой контейнер, который хранит какое-то значение
+</span>4 <span style=''> * или не хранит ничего совсем, указывает, вернула ли операция результат или нет.
+</span>5 <span style=''> * Это часто используется при поиске значений или когда операции могут потерпеть неудачу,
+</span>6 <span style=''> * и вам не важна причина.
+</span>7 <span style=''>
+</span>8 <span style=''> * Комбинаторы называются так, потому что они созданы, чтобы объединять результаты.
+</span>9 <span style=''> * Результат одной функции часто используется в качестве входных данных для другой.
+</span>10 <span style=''>
+</span>11 <span style=''> * Наиболее распространенным способом, является использование их со стандартными структурами данных.
+</span>12 <span style=''> * Функциональные комбинаторы `map` и` flatMap` являются контекстно-зависимыми.
+</span>13 <span style=''> * map - применяет функцию к каждому элементу из списка, возвращается список с тем же числом элементов.
+</span>14 <span style=''> * flatMap берет функцию, которая работает с вложенными списками и объединяет результаты.
+</span>15 <span style=''> */
+</span>16 <span style=''>sealed trait Option[A] {
+</span>17 <span style=''>
+</span>18 <span style=''>  def map[B](f: A =&gt; B): Option[B]
+</span>19 <span style=''>  def flatMap[B](f: A =&gt; Option[B]): Option[B]
+</span>20 <span style=''>}
+</span>21 <span style=''>case class Some[A](a: A) extends Option[A] {
+</span>22 <span style=''>
+</span>23 <span style=''>  def map[B](f: A =&gt; B): Option[B] = </span><span style='background: #AEF1AE'>Some(f(a))</span><span style=''>
+</span>24 <span style=''>  def flatMap[B](f: A =&gt; Option[B]): Option[B] = </span><span style='background: #AEF1AE'>f(a)</span><span style=''>
+</span>25 <span style=''>}
+</span>26 <span style=''>case class None[A]()     extends Option[A] {
+</span>27 <span style=''>
+</span>28 <span style=''>  def map[B](f: A =&gt; B): Option[B] = </span><span style='background: #F0ADAD'>None()</span><span style=''>
+</span>29 <span style=''>  def flatMap[B](f: A =&gt; Option[B]): Option[B] = </span><span style='background: #F0ADAD'>None()</span><span style=''>
+</span>30 <span style=''>}
+</span>31 <span style=''>
+</span>32 <span style=''>/** Напишите ваши решения в тестовых функциях.  */
+</span>33 <span style=''>object Compositions {
+</span>34 <span style=''>
+</span>35 <span style=''>  // a) Используйте данные функции. Вы можете реализовать свое решение прямо в тестовой функции.
+</span>36 <span style=''>  // Нельзя менять сигнатуры
+</span>37 <span style=''>
+</span>38 <span style=''>  def testCompose[A, B, C, D](f: A =&gt; B)
+</span>39 <span style=''>                             (g: B =&gt; C)
+</span>40 <span style=''>                             (h: C =&gt; D): A =&gt; D = </span><span style='background: #AEF1AE'>f andThen g andThen h</span><span style=''>
+</span>41 <span style=''>
+</span>42 <span style=''>  // b) Напишите функции с использованием `map` и `flatMap`. Вы можете реализовать свое решение прямо в тестовой функции.
+</span>43 <span style=''>  // Нельзя менять сигнатуры
+</span>44 <span style=''>
+</span>45 <span style=''>  def testMapFlatMap[A, B, C, D](f: A =&gt; Option[B])
+</span>46 <span style=''>                                (g: B =&gt; Option[C])
+</span>47 <span style=''>                                (h: C =&gt; D): Option[A] =&gt; Option[D] = {
+</span>48 <span style=''>    </span><span style='background: #AEF1AE'>_.flatMap(f).flatMap(g).map(h)</span><span style=''>
+</span>49 <span style=''>}
+</span>50 <span style=''>  // c) Напишите функцию используя for. Вы можете реализовать свое решение прямо в тестовой функции.
+</span>51 <span style=''>  // Нельзя менять сигнатуры
+</span>52 <span style=''>
+</span>53 <span style=''>  def testForComprehension[A, B, C, D](f: A =&gt; Option[B])
+</span>54 <span style=''>                                      (g: B =&gt; Option[C])
+</span>55 <span style=''>                                      (h: C =&gt; D): Option[A] =&gt; Option[D] =  </span><span style='background: #AEF1AE'>for {
+</span>56 <span style=''></span><span style='background: #AEF1AE'>                                      a &lt;- _
+</span>57 <span style=''></span><span style='background: #AEF1AE'>                                      b &lt;- f(a)
+</span>58 <span style=''></span><span style='background: #AEF1AE'>                                      c &lt;- g(b)
+</span>59 <span style=''></span><span style='background: #AEF1AE'>                                      } yield h(c)</span><span style=''>
+</span>60 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          1057
+          -
+          1061
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.apply
+        </td>
+        <td style="background: #AEF1AE">
+          f.apply(Some.this.a)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          1059
+          -
+          1060
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          laba2.Some.a
+        </td>
+        <td style="background: #AEF1AE">
+          Some.this.a
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          1052
+          -
+          1062
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          Some.apply[B](f.apply(Some.this.a))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          1113
+          -
+          1117
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.apply
+        </td>
+        <td style="background: #AEF1AE">
+          f.apply(Some.this.a)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          1115
+          -
+          1116
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          laba2.Some.a
+        </td>
+        <td style="background: #AEF1AE">
+          Some.this.a
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          1207
+          -
+          1213
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.None.apply
+        </td>
+        <td style="background: #F0ADAD">
+          None.apply[B]()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          1264
+          -
+          1270
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.None.apply
+        </td>
+        <td style="background: #F0ADAD">
+          None.apply[B]()
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          1619
+          -
+          1640
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.andThen
+        </td>
+        <td style="background: #AEF1AE">
+          f.andThen[C](g).andThen[D](h)
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          1982
+          -
+          2012
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.Option.map
+        </td>
+        <td style="background: #AEF1AE">
+          x$1.flatMap[B](f).flatMap[C](g).map[D](h)
+        </td>
+      </tr><tr>
+        <td>
+          56
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          2346
+          -
+          2547
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.Option.flatMap
+        </td>
+        <td style="background: #AEF1AE">
+          x$2.flatMap[D](((a: A) =&gt; f.apply(a).flatMap[D](((b: B) =&gt; g.apply(b).map[D](((c: C) =&gt; h.apply(c)))))))
+        </td>
+      </tr><tr>
+        <td>
+          57
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          2437
+          -
+          2547
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.Option.flatMap
+        </td>
+        <td style="background: #AEF1AE">
+          f.apply(a).flatMap[D](((b: B) =&gt; g.apply(b).map[D](((c: C) =&gt; h.apply(c)))))
+        </td>
+      </tr><tr>
+        <td>
+          58
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          2486
+          -
+          2547
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba2.Option.map
+        </td>
+        <td style="background: #AEF1AE">
+          g.apply(b).map[D](((c: C) =&gt; h.apply(c)))
+        </td>
+      </tr><tr>
+        <td>
+          59
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          2543
+          -
+          2547
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.apply
+        </td>
+        <td style="background: #AEF1AE">
+          h.apply(c)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

@@ -1,0 +1,620 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          laba3\Sequence.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package laba3
+</span>2 <span style=''>import scala.annotation.tailrec
+</span>3 <span style=''>
+</span>4 <span style=''>/** Напишите свои решения в тестовых функциях.
+</span>5 <span style=''> *
+</span>6 <span style=''> * Seq(1, 2) match {
+</span>7 <span style=''> *   case head +: tail =&gt; ???
+</span>8 <span style=''> *   case Nil          =&gt; ???
+</span>9 <span style=''> *   case s            =&gt; ???
+</span>10 <span style=''> * }
+</span>11 <span style=''> *
+</span>12 <span style=''> * https://www.scala-lang.org/api/2.12.0/scala/collection/Seq.html
+</span>13 <span style=''> */
+</span>14 <span style=''>// Примечание: напишите функции с хвостовой рекурсией
+</span>15 <span style=''>
+</span>16 <span style=''>object Sequence {
+</span>17 <span style=''>
+</span>18 <span style=''>  /* a) Найдите последний элемент Seq.
+</span>19 <span style=''>   *
+</span>20 <span style=''>   */
+</span>21 <span style=''>  def testLastElement[A](seq: Seq[A]): Option[A] = seq match {
+</span>22 <span style=''>    case Seq(x) =&gt; </span><span style='background: #AEF1AE'>Option(x)</span><span style=''>
+</span>23 <span style=''>    case head +: tail =&gt; </span><span style='background: #AEF1AE'>testLastElement(tail)</span><span style=''>
+</span>24 <span style=''>  }
+</span>25 <span style=''>
+</span>26 <span style=''>  /* b) Объедините две Seqs (то есть Seq(1, 2) и Seq(3, 4) образуют Seq((1, 3), (2, 4))) - если Seq длиннее игнорируйте оставшиеся элементы.
+</span>27 <span style=''>   *
+</span>28 <span style=''>   */
+</span>29 <span style=''>  def testZip[A](a: Seq[A], b: Seq[A]): Seq[(A, A)] = {
+</span>30 <span style=''>    def loop[A](a: Seq[A], b: Seq[A], c: Seq[(A, A)]): Seq[(A, A)] = a match {
+</span>31 <span style=''>      case ahead +: atail =&gt; b match {
+</span>32 <span style=''>        case blast +: Nil =&gt; </span><span style='background: #AEF1AE'>c :+ (ahead, blast)</span><span style=''>
+</span>33 <span style=''>        case bhead +: btail =&gt;</span><span style='background: #AEF1AE'>loop(atail, btail, c :+ (ahead,bhead))</span><span style=''>
+</span>34 <span style=''>      }
+</span>35 <span style=''>      case Nil =&gt; c
+</span>36 <span style=''>    }
+</span>37 <span style=''>    </span><span style='background: #AEF1AE'>loop(a, b, Nil)</span><span style=''>
+</span>38 <span style=''>  }
+</span>39 <span style=''>
+</span>40 <span style=''>  /* c) Проверьте, выполняется ли условие для всех элементов в Seq.
+</span>41 <span style=''>   *
+</span>42 <span style=''>   */
+</span>43 <span style=''>  def testForAll[A](seq: Seq[A])(cond: A =&gt; Boolean): Boolean = {
+</span>44 <span style=''>    def loop[A](a: Seq[A])(cond: A =&gt; Boolean): Boolean = a match {
+</span>45 <span style=''>      case head +: tail =&gt; if (</span><span style='background: #AEF1AE'>cond(head)</span><span style=''>) </span><span style='background: #AEF1AE'>loop(tail)(cond)</span><span style=''>
+</span>46 <span style=''>      else
+</span>47 <span style=''>        </span><span style='background: #F0ADAD'>false</span><span style=''>
+</span>48 <span style=''>      case Nil =&gt; </span><span style='background: #AEF1AE'>true</span><span style=''>
+</span>49 <span style=''>    }
+</span>50 <span style=''>    </span><span style='background: #AEF1AE'>loop(seq)(cond)</span><span style=''>
+</span>51 <span style=''>  }
+</span>52 <span style=''>
+</span>53 <span style=''>  /* d) Проверьте, является ли Seq палиндромом
+</span>54 <span style=''>   *
+</span>55 <span style=''>   */
+</span>56 <span style=''>  def testPalindrom[A](seq: Seq[A]): Boolean = {
+</span>57 <span style=''>    def loop[A](a: Seq[A], b: Seq[A]): Boolean = {
+</span>58 <span style=''>      a match {
+</span>59 <span style=''>        case head +: tail =&gt; </span><span style='background: #AEF1AE'>loop(tail, b = head +: b)</span><span style=''>
+</span>60 <span style=''>        case Nil =&gt; </span><span style='background: #AEF1AE'>seq.equals(b)</span><span style=''>
+</span>61 <span style=''>      }
+</span>62 <span style=''>    }
+</span>63 <span style=''>    </span><span style='background: #AEF1AE'>loop(seq, Nil)</span><span style=''>
+</span>64 <span style=''>  }
+</span>65 <span style=''>
+</span>66 <span style=''>  /* e) Реализуйте flatMap используя foldLeft.
+</span>67 <span style=''>   *
+</span>68 <span style=''>   */
+</span>69 <span style=''>  def testFlatMap[A, B](seq: Seq[A])(f: A =&gt; Seq[B]): Seq[B] = {
+</span>70 <span style=''>    </span><span style='background: #AEF1AE'>seq.foldLeft[Seq[B]](Nil)((a, next) =&gt; f(next).++:(a))</span><span style=''>
+</span>71 <span style=''>  }
+</span>72 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          142
+        </td>
+        <td>
+          514
+          -
+          523
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Option.apply[A](x)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          143
+        </td>
+        <td>
+          550
+          -
+          571
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.testLastElement
+        </td>
+        <td style="background: #AEF1AE">
+          Sequence.this.testLastElement[A](tail)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          145
+        </td>
+        <td>
+          941
+          -
+          960
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqOps.:+
+        </td>
+        <td style="background: #AEF1AE">
+          c.:+[(A, A)](scala.Tuple2.apply[A, A](ahead, blast))
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          144
+        </td>
+        <td>
+          941
+          -
+          960
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Tuple2.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Tuple2.apply[A, A](ahead, blast)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          146
+        </td>
+        <td>
+          1011
+          -
+          1029
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Tuple2.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Tuple2.apply[A, A](ahead, bhead)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          148
+        </td>
+        <td>
+          992
+          -
+          1030
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](atail, btail, c.:+[(A, A)](scala.Tuple2.apply[A, A](ahead, bhead)))
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          147
+        </td>
+        <td>
+          1011
+          -
+          1029
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqOps.:+
+        </td>
+        <td style="background: #AEF1AE">
+          c.:+[(A, A)](scala.Tuple2.apply[A, A](ahead, bhead))
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          149
+        </td>
+        <td>
+          1084
+          -
+          1087
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.Nil
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.immutable.Nil
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          150
+        </td>
+        <td>
+          1073
+          -
+          1088
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](a, b, scala.collection.immutable.Nil)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          151
+        </td>
+        <td>
+          1346
+          -
+          1356
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.apply
+        </td>
+        <td style="background: #AEF1AE">
+          cond.apply(head)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          153
+        </td>
+        <td>
+          1358
+          -
+          1374
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](tail)(cond)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          152
+        </td>
+        <td>
+          1358
+          -
+          1374
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](tail)(cond)
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          155
+        </td>
+        <td>
+          1396
+          -
+          1401
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          false
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          154
+        </td>
+        <td>
+          1396
+          -
+          1401
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          false
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          156
+        </td>
+        <td>
+          1421
+          -
+          1425
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          true
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          157
+        </td>
+        <td>
+          1438
+          -
+          1453
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](seq)(cond)
+        </td>
+      </tr><tr>
+        <td>
+          59
+        </td>
+        <td>
+          158
+        </td>
+        <td>
+          1691
+          -
+          1695
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqOps.+:
+        </td>
+        <td style="background: #AEF1AE">
+          b.+:[A](rassoc$1)
+        </td>
+      </tr><tr>
+        <td>
+          59
+        </td>
+        <td>
+          159
+        </td>
+        <td>
+          1671
+          -
+          1696
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](tail, {
+  final &lt;synthetic&gt; &lt;artifact&gt; val rassoc$1: A = head;
+  b.+:[A](rassoc$1)
+})
+        </td>
+      </tr><tr>
+        <td>
+          60
+        </td>
+        <td>
+          160
+        </td>
+        <td>
+          1718
+          -
+          1731
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.Seq.equals
+        </td>
+        <td style="background: #AEF1AE">
+          seq.equals(b)
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          162
+        </td>
+        <td>
+          1753
+          -
+          1767
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          laba3.Sequence.loop
+        </td>
+        <td style="background: #AEF1AE">
+          loop[A](seq, scala.collection.immutable.Nil)
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          161
+        </td>
+        <td>
+          1763
+          -
+          1766
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.Nil
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.immutable.Nil
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          164
+        </td>
+        <td>
+          1946
+          -
+          1960
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqOps.++:
+        </td>
+        <td style="background: #AEF1AE">
+          f.apply(next).++:[B](a)
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          163
+        </td>
+        <td>
+          1928
+          -
+          1931
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.Nil
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.immutable.Nil
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          165
+        </td>
+        <td>
+          1907
+          -
+          1961
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.IterableOnceOps.foldLeft
+        </td>
+        <td style="background: #AEF1AE">
+          seq.foldLeft[Seq[B]](scala.collection.immutable.Nil)(((a: Seq[B], next: A) =&gt; f.apply(next).++:[B](a)))
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>
