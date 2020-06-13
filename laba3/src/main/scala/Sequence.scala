@@ -1,3 +1,4 @@
+package laba3
 import scala.annotation.tailrec
 
 /** Напишите свои решения в тестовых функциях.
@@ -18,8 +19,8 @@ object Sequence {
    *
    */
   def testLastElement[A](seq: Seq[A]): Option[A] = seq match {
+    case Seq(x) => Option(x)
     case head +: tail => testLastElement(tail)
-    case last +: Nil => Option(last)
   }
 
   /* b) Объедините две Seqs (то есть Seq(1, 2) и Seq(3, 4) образуют Seq((1, 3), (2, 4))) - если Seq длиннее игнорируйте оставшиеся элементы.
@@ -66,6 +67,6 @@ object Sequence {
    *
    */
   def testFlatMap[A, B](seq: Seq[A])(f: A => Seq[B]): Seq[B] = {
-    seq.foldLeft[Seq[B]](Nil)((a, next) => f(next).++: (a))
+    seq.foldLeft[Seq[B]](Nil)((a, next) => f(next).++:(a))
   }
 }

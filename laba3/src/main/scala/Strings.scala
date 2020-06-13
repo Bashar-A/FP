@@ -2,6 +2,7 @@
  *
  * https://www.scala-lang.org/api/2.12.3/scala/collection/immutable/StringOps.html
  */
+package laba3
 object Strings {
 
   /* a) Преобразуйте все символы типа Char в верхний регистр (не используйте заглавные буквы).
