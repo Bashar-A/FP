@@ -46,7 +46,7 @@ object Adts {
   // b) Напишите функцию, увеличивающую число в два раза.
 
   def Double(n: Option[Int]): Option[Int] = {
-    Option(1) match {
+    n match {
       case Some(a) => Option(a * 2)
       case None => null
     }

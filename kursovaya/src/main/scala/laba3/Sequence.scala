@@ -67,6 +67,6 @@ object Sequence {
    *
    */
   def testFlatMap[A, B](seq: Seq[A])(f: A => Seq[B]): Seq[B] = {
-    seq.foldLeft[Seq[B]](Nil)((a, next) => f(next).++: (a))
+    seq.foldLeft[Seq[B]](Nil)((a, next) => f(next).++:(a))
   }
 }

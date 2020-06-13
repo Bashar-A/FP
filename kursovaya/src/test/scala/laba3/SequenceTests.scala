@@ -31,8 +31,8 @@ class SequenceTests extends FunSuite{
     }
     test("FlatMap") {
         val seq = List(1,2,3,4)
-        val func = (value: Int) => List(value)
-        val res = List(1,2,3,4)
+        val func = (value: Any) => List(List(value))
+        val res = List(List(1),List(2),List(3),List(4))
         val flatMap = Sequence.testFlatMap(seq)(func)
         assert(flatMap == res)
     }
